@@ -1,14 +1,12 @@
 #ifndef TWI_H
 #define TWI_H 
 
-#define F_CPU 16000000L
-
 #include <avr/io.h>
 #include <stdint.h>
 #include <util/delay.h>
 
+#define F_CPU 16000000L
 #define TWI_SCL_FREQ 100000 
-
 #define TWI_BAUD ((((float) F_CPU / (float) TWI_SCL_FREQ) - 10)/2)
 
 typedef enum {
